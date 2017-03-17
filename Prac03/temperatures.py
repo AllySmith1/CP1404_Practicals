@@ -5,7 +5,7 @@ Pseudocode for temperature conversion
 __author__ = 'Lindsay Ward'
 
 
-def main:
+def main():
     MENU = "C - Convert Celsius to Fahrenheit\nF - Convert Fahrenheit to Celsius\nQ (for quit)"
     print(MENU)
     choice = input(">>> ").upper()
