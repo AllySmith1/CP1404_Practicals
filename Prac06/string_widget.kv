@@ -1,0 +1,15 @@
+BoxLayout:
+    orientation: 'horizontal'
+    BoxLayout:
+        orientation: 'vertical'
+        id: entriesBox
+        cols: 1
+        orientation: 'vertical'
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            text: "Show Name"
+            on_press: app.create_widgets()
+        Button:
+            text: "Clear All"
+            on_press: app.clear_all()

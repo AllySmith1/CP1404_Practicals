@@ -18,6 +18,7 @@ class DistanceConverter(App):
     def handle_increment(self, num):
         value = self.validate_input() + num
         self.root.ids.input_number.text = str(value)
+        self.handle_conversion()
 
     def validate_input(self):
         try:
