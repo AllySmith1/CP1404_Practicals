@@ -1,3 +1,13 @@
+<Widget>:
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+    color: 1, 1, 1, 1
+
+<Button>:
+    font_size: 56
+    background_color: 0.5, 1, 1, 1
+
 BoxLayout:
     orientation: 'vertical'
     BoxLayout:
@@ -5,6 +15,7 @@ BoxLayout:
         TextInput:
             id: input_number
             text: '34'
+#            color: 1, 1, 1, 1
             font_size: 48
             on_text: app.handle_conversion()
         BoxLayout:
@@ -23,4 +34,4 @@ BoxLayout:
         id: output_number
         text: '154.717'
         font_size: 48
-        color: [1, 1, 0, 1]
+        color: [1, 1, 1, 1]
