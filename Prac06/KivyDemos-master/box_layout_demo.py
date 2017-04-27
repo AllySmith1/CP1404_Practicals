@@ -13,13 +13,7 @@ class BoxLayoutDemo(App):
         self.root.ids.output_label.text = "Hello " + self.root.ids.input_name.text
 
     def press_clear(self):
-        """
-        Clear any buttons that have been selected (visually) and reset status text
-        :return: None
-        """
-        # use the .children attribute to access all widgets that are "in" another widget
-        for instance in self.root.ids.entriesBox.children:
-            instance.state = 'normal'
-        # self.status_text = ""'
+        self.root.ids.output_label.text = 'Enter your name'
+        self.root.ids.input_name.text = ''
 
 BoxLayoutDemo().run()
